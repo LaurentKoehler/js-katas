@@ -13,9 +13,37 @@ You can't use Math.min(), the goal is to recreate this function!
 */
 
 // TODO add your code here
+// look at the breaking cases
+//  return NaN if any parameter isn't a number (typeof)
+
+// create a function named min with 2 numbers as parameters
+// compare the numbers and return the lowest one
+//simplifie with 3nr
+
+
+function min(a, b) {
+    if (typeof a !== 'number' || typeof b !== 'number') return NaN
+    return a < b ? a : b;
+
+    if (a === b) {
+        return a
+    }
+
+    if (a < b) {
+        return a
+    }
+
+    if (a > b) {
+        return b
+    }
+
+
+
+}
 
 // Begin of tests
 const assert = require("assert");
+const { type } = require("os");
 
 assert.strictEqual(typeof min, "function");
 assert.strictEqual(min.length, 2);
