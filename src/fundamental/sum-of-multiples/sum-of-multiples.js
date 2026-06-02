@@ -8,6 +8,21 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 */
 
 // TODO add your code here
+//Build a function named sum with one argument (n)
+//loop all numbers to n-1
+//check multiples of 3 and 5 in the list, multiple of both only count once
+//return the sum of all those multiples (create a variable for that)
+
+
+function sum(n) {
+    let total = 0
+    for (let i = 0; i < n; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            total += i
+        }
+    }
+    return total
+}
 
 // Begin of tests
 const assert = require("assert");
