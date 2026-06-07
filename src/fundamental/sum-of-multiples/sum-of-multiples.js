@@ -1,27 +1,28 @@
+
+
+
 /*
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-Create a function `sum` which returns the sum of all the multiples of 3 or 5 below the number in argument.
+Create a function `sum` which returns the sum of all the multiples of 3 or 5 below the number in parameter.
 
 Note: If the number is a multiple of both 3 and 5, only count it once.
 
 */
+// Create a function "sum" with one parameter (n)
+// List all numbers to n, 
+// check multiples of 3 and 5 in the list
+//if n is a multiple of 3 or 5, add it to the sum
+//return the sum of all the multiples
 
-// TODO add your code here
-//Build a function named sum with one argument (n)
-//loop all numbers to n-1
-//check multiples of 3 and 5 in the list, multiple of both only count once
-//return the sum of all those multiples (create a variable for that)
-
-
-function sum(n) {
-    let total = 0
-    for (let i = 0; i < n; i++) {
+function sum(number) {
+    let total = 0;
+    for (let i = 0; i < number; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
-            total += i
+            total += i;
         }
     }
-    return total
+    return total;
 }
 
 // Begin of tests
